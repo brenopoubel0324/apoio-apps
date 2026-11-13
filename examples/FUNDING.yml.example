@@ -1,0 +1,6 @@
+# Activate only profiles that you own and have configured to receive support.
+# Place in .github/FUNDING.yml of each public repo, or the account's .github repo.
+# github: [YOUR_ACTIVE_SPONSORS_PROFILE]
+# ko_fi: YOUR_KO_FI_HANDLE
+# buy_me_a_coffee: YOUR_BUY_ME_A_COFFEE_HANDLE
+# custom: ["https://YOUR_SUPPORT_DOMAIN/support"]

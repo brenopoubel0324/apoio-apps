@@ -1,0 +1,9 @@
+.gradle/
+**/build/
+tools/*.jar
+__pycache__/
+.idea/
+.env
+local.properties
+*.jks
+*.keystore
