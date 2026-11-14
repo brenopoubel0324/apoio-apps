@@ -19,6 +19,8 @@ jobs:
           cache: gradle
       - name: Check wrapper checksum
         run: cd gradle/wrapper && sha256sum -c gradle-wrapper.jar.sha256
+      - name: Test app review tool
+        run: python3 -m unittest discover -s tools/tests -v
       - name: Build, test and publish to local Maven fixture
         run: ./gradlew --no-daemon check assemble :core:sourcesJar :android:sourcesJar publishAllPublicationsToLocalTestRepository
       - name: Test an independent Maven consumer

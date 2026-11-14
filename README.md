@@ -5,6 +5,28 @@ Poubel. O núcleo mantém destinos e regras; cada app mantém sua interface.
 Pagamentos ocorrem no checkout do provedor. Não há conta recebedora ativa,
 processamento financeiro ou confirmação de pagamento na biblioteca.
 
+## Revisar nossos apps
+
+Este repositório também reúne a revisão de licença, distribuição e monetização
+por app. A partir deste checkout, gere uma ficha local:
+
+```sh
+python3 tools/review_app.py --repo ../meu-app
+```
+
+A coleta identifica evidências de licença, manifests e configuração de apoio.
+A ficha inclui análise de autoria/obrigações, conferência do recebedor/canal e
+matriz de features gratuitas, premium ou serviços pagos, considerando a adoção
+do público geek. A conclusão jurídica/comercial exige revisão das evidências.
+
+Relatórios ficam em `reviews/local/`, ignorados pelo Git. Nenhum relatório privado
+é publicado automaticamente. Veja o [fluxo de revisão](docs/revisao-apps.md) e a
+[ficha](reviews/modelo-app.md). A ferramenta é usada pelo desenvolvedor no checkout;
+os JARs `v0.1.0` contêm o catálogo e o launcher. A tag `v0.1.0` é anterior a esta
+ferramenta; os comandos de instalação abaixo fixam a versão da biblioteca.
+
+[Autoauditoria da ferramenta](docs/auditoria-revisao-apps.md).
+
 ## Instalar pelo checkout Git
 
 Clone este repo ao lado do app e fixe uma tag/revisão validada:
@@ -89,6 +111,8 @@ ocupa o papel de navegador padrão.
 | android | Launcher para celular, JAR sem manifest/recursos |
 | wear | Requisitos documentados; sem adaptador/pacote publicado |
 | examples/consumer | Consumidor independente da publicação Maven local |
+| tools/review_app.py | Coleta local para revisão de licença e monetização por app |
+| reviews | Ficha reutilizável; relatórios locais ignorados pelo Git |
 | docs | Pesquisa pública, integração, publicação e auditoria |
 
 Links apenas em GITHUB_APK e WEB. GOOGLE_PLAY, UNKNOWN e canal nulo continuam
@@ -103,6 +127,7 @@ antigas da API para compilar o launcher; elas não entram na distribuição. Tes
 Android rodam na JVM com mocks, sem validar a experiência em aparelho/emulador.
 
 ```sh
+python3 -m unittest discover -s tools/tests -v
 ./gradlew check assemble :core:sourcesJar :android:sourcesJar publishAllPublicationsToLocalTestRepository
 ./gradlew -p examples/consumer run
 ./gradlew -p examples/consumer -PuseCheckout=true run

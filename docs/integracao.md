@@ -1,5 +1,9 @@
 # Integrar em um app
 
+Comece pelo [fluxo de revisão por app](revisao-apps.md), que reúne licença,
+condições de distribuição, apoio e candidatos a recursos pagos. A ficha de cada
+app fica local; `recipientReviewed` continua restrito à conferência do recebedor.
+
 1. Clone o repositório ao lado do app e fixe uma tag, seguindo o README. Use
    `includeBuild("../apoio-apps")` e a dependência `android`; `core` chega
    transitivamente. Projetos JVM podem depender somente de `core`.
