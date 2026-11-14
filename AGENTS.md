@@ -2,6 +2,11 @@
 
 Leia README, docs/integracao.md e docs/releases.md antes de editar.
 
+Ao revisar um consumidor para distribuição, apoio ou monetização, seguir
+docs/revisao-apps.md. Usar tools/review_app.py para iniciar a ficha local e
+concluir manualmente as evidências; encontrar uma licença não aprova a entrega.
+Manter relatórios privados em reviews/local/ e fora dos commits públicos.
+
 - Nunca inferir pagamento de retorno do navegador, clique ou parâmetro de URL.
 - Manter canais desconhecidos e Google Play sem links até revisão específica.
 - Não inserir conta real ou credenciais nos exemplos.
@@ -11,6 +16,7 @@ Leia README, docs/integracao.md e docs/releases.md antes de editar.
 Validação:
 
 ```sh
+python3 -m unittest discover -s tools/tests -v
 ./gradlew check assemble :core:sourcesJar :android:sourcesJar publishAllPublicationsToLocalTestRepository
 ./gradlew -p examples/consumer run
 git diff --check
