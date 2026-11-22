@@ -55,6 +55,10 @@ Estes guias não concedem licença aos consumidores nem mudam termos já existen
 
 ## Escolher apoio e recursos pagos
 
+Use o [modelo de monetização](monetizacao.md) para definir compra única, apoio
+voluntário, licença e trial completo. Registre na ficha as decisões e os casos
+validados por produto e canal.
+
 Preencha a matriz da ficha considerando primeiro a promessa do app para novos
 usuários. Para público geek, controle, operação local e experimentação podem ser
 o valor principal; valide a hipótese com usuários reais. “Avançado” não basta

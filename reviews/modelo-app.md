@@ -56,6 +56,17 @@ Recomendações a avaliar com os usuários:
 - Definir piloto e critério de recuo com evidência disponível, sem inventar conversão.
 - Observar retenção e fricção além de receita; não adicionar telemetria automaticamente.
 
+## Oferta Pro, licença e trial
+
+- Benefícios Pro, compra única e preço por canal e país. **Preencher.**
+- Apoio repetível e independente do Pro em cada canal. **Conferir.**
+- Titularidade e número de aparelhos ativos, quando houver limite. **Preencher.**
+- Restauração em reinstalação, troca, perda do aparelho ou código perdido. **Definir.**
+- Trial com acesso a todo o Pro, duração, início, elegibilidade e uso offline. **Definir.**
+- Efeito do vencimento sobre perfis, dados, automações e recuperação. **Testar.**
+- Compra pendente, cancelada, confirmada, duplicada e reembolsada. **Testar por canal.**
+- Variante, versão, ambiente de teste e evidência de cada cenário. **Registrar.**
+
 ## Achados, validação e decisão
 
 | Severidade | Arquivo/componente | Problema e evidência | Correção ou decisão necessária |
